@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Overweight & Obesity App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+  <!-- css-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/info.css" type="text/css" />
+
+  <!-- javascript -->
+  <script src="jquery/jquery.js"></script>
+  <script src="jquery/jquery.mobile-1.4.5.js"></script>
+  <script type="text/javascript"></script>
+  <script src="cordova.js"></script>
+
+  <title>Obesity and Weightloss App</title>
+</head>
+
+<body>
+  <!-- Index -->
+  <div data-role="page" id="index" data-theme="b">
+    <!-- Page header -->
+    <div data-role="header">
+      <h1>OVERWEIGHT AND OBESITY MOBILE APP</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <br />
+      <br />
+      <br />
+      <div class="ui-grid-a">
+        <!-- 1st row -->
+        <!-- Profile -->
+        <div class="ui-block-a">
+          <div class="ui-bar ui-bar-a">
+            <div class="menu-elem"> <a href="#profile">
+                <div class="menu-img"> <img src="image/profile.png"> </div>
+                <div class="menu-text"> Profile </div>
+              </a> </div>
+          </div>
+        </div>
+
+        <!-- BMI -->
+        <div class="ui-block-b">
+          <div class="ui-bar ui-bar-a">
+            <div class="menu-elem"> <a href="#bmi">
+                <div class="menu-img"> <img src="image/bmi.png"> </div>
+                <div class="menu-text"> BMI </div>
+              </a> </div>
+          </div>
+        </div>
+
+        <!-- 2nd row -->
+        <!-- workout plan -->
+        <div class="ui-block-a">
+          <div class="ui-bar ui-bar-a">
+            <div class="menu-elem"> <a href="#workout">
+                <div class="menu-img"> <img src="image/workout.png"> </div>
+                <div class="menu-text"> Workout Plan </div>
+              </a> </div>
+          </div>
+        </div>
+
+        <!-- Geolocation -->
+        <div class="ui-block-b">
+          <div class="ui-bar ui-bar-a">
+            <div class="menu-elem"> <a href="#geo">
+                <div class="menu-img"> <img src="image/map.png"> </div>
+                <div class="menu-text"> Geolocation </div>
+              </a> </div>
+          </div>
+        </div>
+
+        <!-- 3rd row -->
+        <!-- Diet Chart Plan -->
+        <div class="ui-block-a">
+          <div class="ui-bar ui-bar-a">
+            <div class="menu-elem"> <a href="#diet">
+                <div class="menu-img"> <img src="image/diet.png"> </div>
+                <div class="menu-text"> Diet Chart Plan </div>
+              </a> </div>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="ui-block-b ui-responsive">
+          <div class="ui-bar ui-bar-a">
+            <div class="menu-elem"> <a href="#causes" class="ui-link">
+                <div class="menu-img"> <img src="image/info.png"> </div>
+                <div class="menu-text"> Info </div>
+              </a> </div>
+          </div>
+        </div>
+
+        <!-- ui-grid -->
+      </div>
+      <!-- main -->
+    </div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+    <!-- Footer -->
+    <div data-role="footer" id="footer">
+      <h2>© Azraa & Faatimah</h2>
+    </div>
+
+    <!-- body -->
+  </div>
+
+
+  <!--Symptoms & Causes-->
+  <div data-role="page" id="causes" data-theme="b">
+    <div data-role="header">
+      <h1>Overweight and Obesity App</h1>
+
+      <div data-role="navbar">
+        <ul>
+          <li class="nav"><a href="#causes" data-transition="slide" data-icon="">Symptoms & Causes</a></li>
+          <li class="nav"><a href="#treatment" data-transition="pop" data-icon="">Diagnosis & Treatment</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Overview</h2>
+      <p>Obesity is a complex disease involving an excessive amount of body fat. Obesity isn't just a cosmetic concern. It is a medical problem that increases your risk of other diseases and health problems, such as heart disease, diabetes, high
+        blood pressure and certain cancers.</p>
+
+      <h2>Symptoms</h2>
+      <p>Obesity is diagnosed when your Body Mass Index (BMI) is 30 or higher.</p>
+      To determine your body mass index:
+      <div>
+        <ol>
+          <li>divide your weight in pounds by your height in inches squared and multiply by 703.</li>
+          <br />
+          OR
+          <br />
+          <br />
+          <li>divide your weight in kilograms by your height in meters squared.</li>
+          <p>For most people, BMI provides a reasonable estimate of body fat. However, BMI doesn't directly measure body fat, so some people, such as muscular athletes, may have a BMI in the obesity category even though they don't have excess body
+            fat.</p>
+      </div>
+
+      <h2>When to see a doctor?</h2>
+      <p>If you're concerned about weight-related health problems, ask your doctor about obesity management. You and your doctor can evaluate your health risks and discuss your weight-loss options.</p>
+
+      <h2>Causes</h2>
+      <p>Although there are genetic, behavioral, metabolic and hormonal influences on body weight, obesity occurs when you take in more calories than you burn through exercise and normal daily activities. Your body stores these excess calories as
+        fat.
+        <br />
+        Most Americans' diets are too high in calories — often from fast food and high-calorie beverages.</p>
+      People with obesity might:
+      <div>
+        <ul>
+          <li>eat more calories before feeling full,</li>
+          <li>feel hungry sooner,</li>
+          <li>or eat more due to stress or anxiety.</li>
+        </ul>
+      </div>
+
+      <h2>Risk Factors</h2>
+      <p>Obesity usually results from a combination of causes and contributing factors:</p>
+
+      <h3>Family Inheritance and Influences</h3>
+      <p>The genes you inherit from your parents may affect the amount of body fat you store, and where that fat is distributed. Genetics may also play a role in how efficiently your body converts food into energy, how your body regulates your
+        appetite and how your body burns calories during exercise.
+        <br />
+        Obesity tends to run in families. That's not just because of the genes they share. Family members also tend to share similar eating and activity habits.</p>
+
+      <h3>Lifestyle Choices</h3>
+      <div>
+        <ul>
+          <li class="choices">Unhealthy Diet</li> A diet that is high in calories, lacking fruits and vegetables, full of fast food, and laden with high-calories beverages and oversized portions contributes to weight gain.
+          <li class="choices">Liquid Calories</li> People can drink many calories without feeling full, especially calories from alcohol. Other high-calorie beverages, such as sugared soft drinks, can contribute to significant weight gain.
+          <li class="choices">Inactivity</li> If you have a sedentary lifestyle, you can easily take in more calories every day than you burn through exercise and routine daily activities. Looking at computer, tablet and phone screens is a sedentary
+          activity. The number of hours you spend in front of a screen is highly associated with weight gain.
+        </ul>
+      </div>
+
+      <h3>Certain Diseases and Medications</h3>
+      <p>In some people, obesity can be traced to a medical cause, such as Prader-Willi syndrome, Cushing syndrome and other conditions. Medical problems, such as arthritis, also can lead to decreased activity, which may result in weight gain.
+        <br />
+        Some medications can lead to weight gain if you don't compensate through diet or activity. These medications include some antidepressants, anti-seizure medications, diabetes medications, antipsychotic medications, steroids and beta blockers.</p>
+
+      <h3>Social and Economic Issues</h3>
+      <p>Social and economic factors are linked to obesity. Avoiding obesity is difficult if you don't have safe areas to walk or exercise. Similarly, you may not have been taught healthy ways of cooking, or you may not have access to healthier
+        foods. In addition, the people you spend time with may influence your weight — you're more likely to develop obesity if you have friends or relatives with obesity.</p>
+
+      <h3>Age</h3>
+      <p>Obesity can occur at any age, even in young children. But as you age, hormonal changes and a less active lifestyle increase your risk of obesity. In addition, the amount of muscle in your body tends to decrease with age. Generally, lower
+        muscle mass leads to a decrease in metabolism. These changes also reduce calorie needs, and can make it harder to keep off excess weight. If you don't consciously control what you eat and become more physically active as you age, you'll
+        likely gain weight.</p>
+
+      <h3>Other Factors</h3>
+      <div>
+        <ul>
+          <li class="factors">Pregnancy</li> Weight gain is common during pregnancy. Some women find this weight difficult to lose after the baby is born. This weight gain may contribute to the development of obesity in women. Breast-feeding may be
+          the best option to lose the weight gained during pregnancy.
+          <li class="factors">Quitting Smoking</li> Quitting smoking is often associated with weight gain. And for some, it can lead to enough weight gain to qualify as obesity. Often, this happens as people use food to cope with smoking withdrawal.
+          In the long run, however, quitting smoking is still a greater benefit to your health than is continuing to smoke. Your doctor can help you prevent weight gain after quitting smoking.
+          <li class="factors">Lack of Sleep</li> Not getting enough sleep or getting too much sleep can cause changes in hormones that increase your appetite. You may also crave foods high in calories and carbohydrates, which can contribute to
+          weight gain.
+          <li class="factors">Stress</li> Many external factors that affect your mood and well-being may contribute to obesity. People often seek more high-calorie food when experiencing stressful situations.
+          <li class="factors">Microbiome</li> Your gut bacteria are affected by what you eat and may contribute to weight gain or difficulty losing weight.
+          <li class="factors">Previous Attempts to Lose Weight</li> Previous attempts of weight loss followed by rapid weight regain may contribute to further weight gain. This phenomenon, sometimes called yo-yo dieting, can slow your metabolism.
+        </ul>
+        <p>Even if you have one or more of these risk factors, it doesn't mean that you're destined to develop obesity. You can counteract most risk factors through diet, physical activity and exercise, and behavior changes.</p>
+      </div>
+
+      <h3>Complications</h3>
+      <p>People with obesity are more liekly to develop a number of potentially serious health problems, including: </p>
+      <div>
+        <ul>
+          <li class="complications">Heart Disease and Strokes</li> Obesity makes you more likely to have high blood pressure and abnormal cholesterol levels, which are risk factors for heart disease and strokes.
+          <li class="complications">Type 2 Diabetes</li> Obesity can affect the way your body uses insulin to control blood sugar levels. This raises your risk of insulin resistance and diabetes.
+          <li class="complications">Certain Cancers</li> Obesity may increase your risk of cancer of the uterus, cervix, endometrium, ovary, breast, colon, rectum, esophagus, liver, gallbladder, pancreas, kidney and prostate.
+          <li class="complications">Digestive Problems</li> Obesity increases the likelihood that you'll develop heartburn, gallbladder disease and liver problems.
+          <li class="complications">Gynecological and Sexual Problems</li> Obesity may cause infertility and irregular periods in women. Obesity also can cause erectile dysfunction in men.
+          <li class="complications">Sleep Apnea</li> People with obesity are more likely to have sleep apnea, a potentially serious disorder in which breathing repeatedly stops and starts during sleep.
+          <li class="complications">Osteoarthritis</li> Obesity increases the stress placed on weight-bearing joints, in addition to promoting inflammation within the body. These factors may lead to complications such as osteoarthritis.
+        </ul>
+      </div>
+
+      <h3>Quality of Life</h3>
+      <p>Obesity can diminish your overall quality of life. You may not be able to do things you used to do, such as participating in enjoyable activities. You may avoid public places. People with obesity may even encounter discrimination.
+        <br />
+        Other weight-related issues that may affect your quality of life include: </p>
+      <div class="qol">
+        <ul>
+          <li>Depression</li>
+          <li>Disability</li>
+          <li>Sexual Problems</li>
+          <li>Shame and Guilt</li>
+          <li>Social Isolation</li>
+          <li>Lower Work Achievement</li>
+        </ul>
+      </div>
+
+      <h3>Prevention</h3>
+      <p>Whether you're at risk of obesity, currently overweight or at a healthy weight, you can take steps to prevent unhealthy weight gain and related health problems. Not surprisingly, the steps to prevent weight gain are the same as the steps to
+        lose weight: daily exercise, a healthy diet, and a long-term commitment to watch what you eat and drink.</p>
+      <div>
+        <ul>
+          <li class="prevention">Exercise Regularly</li> You need to get 150 to 300 minutes of moderate-intensity activity a week to prevent weight gain. Moderately intense physical activities include fast walking and swimming.
+          <li class="prevention">Follow a Healthy-Eating Plan</li> Focus on low-calorie, nutrient-dense foods, such as fruits, vegetables and whole grains. Avoid saturated fat and limit sweets and alcohol. Eat three regular meals a day with limited
+          snacking. You can still enjoy small amounts of high-fat, high-calorie foods as an infrequent treat. Just be sure to choose foods that promote a healthy weight and good health most of the time.
+          <li class="prevention">Know and Avoid The Food Traps That Cause You To Eat</li> Identify situations that trigger out-of-control eating. Try keeping a journal and write down what you eat, how much you eat, when you eat, how you're feeling
+          and how hungry you are. After a while, you should see patterns emerge. You can plan ahead and develop strategies for handling these types of situations and stay in control of your eating behaviors.
+          <li class="prevention">Monitor Your Weight Regularly</li> People who weigh themselves at least once a week are more successful in keeping off excess pounds. Monitoring your weight can tell you whether your efforts are working and can help
+          you detect small weight gains before they become big problems.
+          <li class="prevention">Be Consistent</li> Sticking to your healthy-weight plan during the week, on the weekends, and amidst vacation and holidays as much as possible increases your chances of long-term success.
+        </ul>
+      </div>
+    </div>
+
+    <br />
+    <!-- Footer -->
+    <div data-role="footer">
+      <h2>© Azraa & Faatimah</h2>
+    </div>
+
+    <!-- Symptoms and Causes -->
+  </div>
+
+  <!--Diagnosis & Treatment-->
+  <div data-role="page" id="treatment" data-theme="b">
+    <div data-role="header">
+      <h1>Overweight and Obesity App</h1>
+
+      <div data-role="navbar">
+        <ul>
+          <li class="nav"><a href="#causes" data-transition="slide" data-icon="">Symptoms & Causes</a></li>
+          <li class="nav"><a href="#treatment" data-transition="pop" data-icon="">Diagnosis & Treatment</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h3>Diagnosis</h3>
+      <p>To diagnose obesity, your doctor will typically perform a physical exam and recommend some tests.</p>
+      <p>These exams and tests generally include: </p>
+      <div>
+        <ul>
+          <li class="diagnosis">Taking Your Health History</li> Your doctor may review your weight history, weight-loss efforts, physical activity and exercise habits, eating patterns and appetite control, what other conditions you've had,
+          medications, stress levels, and other issues about your health. Your doctor may also review your family's health history to see if you may be predisposed to certain conditions.
+          <li class="diagnosis">A General Physical Exam</li> This includes measuring your height; checking vital signs, such as heart rate, blood pressure and temperature; listening to your heart and lungs; and examining your abdomen.
+          <li class="diagnosis">Calculating Your BMI</li> Your doctor will check your body mass index (BMI). A BMI of 30 or higher is considered obesity. Numbers higher than 30 increase your health risks even more. Your BMI should be checked at
+          least once a year because it can help determine your overall health risks and what treatments may be appropriate.
+          <li class="diagnosis">Measuring Your Waist Circumference</li> Fat stored around your waist, sometimes called visceral fat or abdominal fat, may further increase your risk of heart disease and diabetes. Women with a waist measurement
+          (circumference) of more than 35 inches (89 centimeters, or cm) and men with a waist measurement of more than 40 inches (102 cm) may have more health risks than do people with smaller waist measurements. Like the BMI measurement, your waist
+          circumference should be checked at least once a year.
+          <li class="diagnosis">Checking For Other Health Problems</li> If you have known health problems, your doctor will evaluate them. Your doctor will also check for other possible health problems, such as high blood pressure and diabetes. Your
+          doctor may also recommend certain heart tests, such as an electrocardiogram.
+          <li class="diagnosis">Blood Tests</li> What tests you have depend on your health, risk factors and any current symptoms you may be having. Blood tests may include a cholesterol test, liver function tests, a fasting glucose, a thyroid test
+          and others.
+        </ul>
+      </div>
+      <p>Gathering all this information helps you and your doctor determine how much weight you need to lose and what health conditions or risks you already have. And this will guide treatment decisions.</p>
+
+      <h3>Treatment</h3>
+      <p>The goal of obesity treatment is to reach and stay at a healthy weight. This improves your overall health and lowers your risk of developing complications related to obesity. You may need to work with a team of health professionals —
+        including a dietitian, behavioral counselor or an obesity specialist — to help you understand and make changes in your eating and activity habits.</p>
+      <p>The initial treatment goal is usually a modest weight loss — 5% to 10% of your total weight. That means that if you weigh 200 pounds (91 kg) and have obesity by BMI standards, you would need to lose only about 10 to 20 pounds (4.5 to 9 kg)
+        for your health to begin to improve. However, the more weight you lose, the greater the benefits.</p>
+      <p>All weight-loss programs require changes in your eating habits and increased physical activity. The treatment methods that are right for you depend on your obesity severity, your overall health and your willingness to participate in your
+        weight-loss plan.</p>
+
+      <h3>Dietary Changes</h3>
+      <p>Reducing calories and practicing healthier eating habits are vital to overcoming obesity. Although you may lose weight quickly at first, steady weight loss over the long term is considered the safest way to lose weight and the best way to
+        keep it off permanently.</p>
+      <p>Avoid drastic and unrealistic diet changes, such as crash diets, because they're unlikely to help you keep excess weight off for the long term.</p>
+      <p>Plan to participate in a comprehensive weight-loss program for at least six months and in the maintenance phase of a program for at least a year to boost your odds of weight-loss success.</p>
+      <p>There is no best weight-loss diet. Choose one that includes healthy foods that you feel will work for you. Dietary changes to treat obesity include: </p>
+      <div>
+        <ul>
+          <li class="dietary">Cutting Calories</li> The key to weight loss is reducing how many calories you take in. The first step is to review your typical eating and drinking habits to see how many calories you normally consume and where you can
+          cut back. You and your doctor can decide how many calories you need to take in each day to lose weight, but a typical amount is 1,200 to 1,500 calories for women and 1,500 to 1,800 for men.
+          <li class="dietary">Feeling Full On Less</li> Some foods — such as desserts, candies, fats and processed foods — contain a large amount of calories for a small portion. In contrast, fruits and vegetables provide a larger portion size with
+          fewer calories. By eating larger portions of foods that have fewer calories, you reduce hunger pangs, take in fewer calories and feel better about your meal, which contributes to how satisfied you feel overall.
+          <li class="dietary">Making Healthier Choices</li> To make your overall diet healthier, eat more plant-based foods, such as fruits, vegetables and whole-grain carbohydrates. Also emphasize lean sources of protein — such as beans, lentils
+          and soy — and lean meats. If you like fish, try to include fish twice a week. Limit salt and added sugar. Eat small amounts of fats, and make sure they come from heart-healthy sources, such as olive, canola and nut oils.
+          <li class="dietary">Restricting Certain Foods</li> Certain diets limit the amount of a particular food group, such as high-carbohydrate or full-fat foods. Ask your doctor which diet plans have been found effective and which might be
+          helpful for you. Drinking sugar-sweetened beverages is a sure way to consume more calories than you intended, and limiting these drinks or eliminating them altogether is a good place to start cutting calories.
+          <li class="dietary">Meal Replacements</li> These plans suggest that you replace one or two meals with their products — such as low-calorie shakes or meal bars — and eat healthy snacks and a healthy, balanced third meal that's low in fat
+          and calories. In the short term, this type of diet can help you lose weight. Keep in mind that these diets likely won't teach you how to change your overall lifestyle, though, so you may have to keep this up if you want to keep your weight
+          off.
+        </ul>
+      </div>
+      <p>Be wary of quick fixes. You may be tempted by fad diets that promise fast and easy weight loss. The reality, however, is that there are no magic foods or quick fixes. Fad diets may help in the short term, but the long-term results don't
+        appear to be any better than other diets.</p>
+      <p>Similarly, you may lose weight on a crash diet, but you're likely to regain it when you stop the diet. To lose weight — and keep it off — you have to adopt healthy-eating habits that you can maintain over time.</p>
+
+      <h3>Exercise And Activity</h3>
+      <p>Increased physical activity or exercise is an essential part of obesity treatment. Most people who are able to maintain their weight loss for more than a year get regular exercise, even simply walking.</p>
+      <p>To boost your activity level: </p>
+      <div>
+        <ul>
+          <li class="exercise">Exercise</li> People with obesity need to get at least 150 minutes a week of moderate-intensity physical activity to prevent further weight gain or to maintain the loss of a modest amount of weight. To achieve
+          more-significant weight loss, you may need to exercise 300 minutes or more a week. You probably will need to gradually increase the amount you exercise as your endurance and fitness improve.
+          <li class="exercise">Keep Moving</li> Even though regular aerobic exercise is the most efficient way to burn calories and shed excess weight, any extra movement helps burn calories. Making simple changes throughout your day can add up to
+          big benefits. Park farther from store entrances, rev up your household chores, garden, get up and move around periodically, and wear a pedometer to track how many steps you actually take over the course of a day. A nice recommended goal is
+          to try to reach 10,000 steps every day. Gradually increase the amount of steps to reach that goal.
+        </ul>
+      </div>
+
+      <h3>Behaviour Changes</h3>
+      <p>A behavior modification program can help you make lifestyle changes and lose weight and keep it off. Steps to take include examining your current habits to find out what factors, stresses or situations may have contributed to your obesity.</p>
+      <p>Everyone is different and has different obstacles to managing weight, such as a lack of time to exercise or late-night eating. Tailor your behavior changes to address your individual concerns.</p>
+      <p>Behavior modification, sometimes called behavior therapy, can include: </p>
+      <div>
+        <ul>
+          <li class="behaviour">Counseling</li> Talking with a mental health professional can help you address emotional and behavioral issues related to eating. Therapy can help you understand why you overeat and learn healthy ways to cope with
+          anxiety. You can also learn how to monitor your diet and activity, understand eating triggers, and cope with food cravings. Counseling can be one-on-one or in a group. More-intensive programs — those that include 12 to 26 sessions a year —
+          may be more helpful in achieving your weight-loss goals.
+          <li class="behaviour">Support Groups</li> You can find camaraderie and understanding in support groups where others share similar challenges with obesity. Check with your doctor, local hospitals or commercial weight-loss programs for
+          support groups in your area.
+        </ul>
+      </div>
+
+      <h3>Prescription Weight-Loss Medication</h3>
+      <p>Losing weight requires a healthy diet and regular exercise. But in certain situations, prescription weight-loss medication may help.</p>
+      <p>Keep in mind, though, that weight-loss medication is meant to be used along with diet, exercise and behavior changes, not instead of them. The main purpose of weight-loss medications, also known as anti-obesity medications, is to help you
+        to stick to a low-calorie diet by stopping the hunger and lack of fullness signals that appear when trying to lose weight.</p>
+      <p>Your doctor may recommend weight-loss medication if other diet and exercise programs haven't worked and you meet one of these criteria: </p>
+      <div class="medication">
+        <ul>
+          <li>Your BMI is 30 or greater</li>
+          <li>Your BMI is greater than 27, and you also have medical complications of obesity, such as diabetes, high blood pressure or sleep apnea</li>
+        </ul>
+      </div>
+      <p>Before selecting a medication for you, your doctor will consider your health history, as well as possible side effects. Some weight-loss medications can't be used by women who are pregnant or by people who take certain medications or have
+        chronic health conditions.</p>
+      <p>You'll need close medical monitoring while taking a prescription weight-loss medication. Also, keep in mind that a weight-loss medication may not work for everyone, and the effects may wane over time. When you stop taking a weight-loss
+        medication, you may regain much or all of the weight you lost.</p>
+
+      <h3>Endoscopic Procedures For Weight Loss</h3>
+      <p>These types of procedures don't require any incisions in your skin. After you receive anesthesia, flexible tubes and tools are inserted through your mouth and down your throat into your stomach.</p>
+      <p>There are several different types of endoscopic procedures used for weight loss. One procedure involves placing stitches in your stomach to reduce its size and the amount of food you can comfortably consume. In another endoscopic procedure,
+        doctors insert a small balloon into your stomach. The balloon is filled with water to reduce the amount of space available in your stomach. This helps you feel fuller faster.</p>
+      <p>These procedures are usually approved for people with BMIs of 30 or above when diet and exercise alone have not been successful. The expected weight loss varies among procedures from 5% to 20% of total body weight loss.</p>
+
+      <h3>Weight-Loss Surgery</h3>
+      <p>In some people, weight-loss surgery, also called bariatric surgery, is an option. Weight-loss surgery limits the amount of food you're able to comfortably eat or decreases the absorption of food and calories, or it does both. While
+        weight-loss surgery offers the best chance of losing the most weight, it can pose serious risks.</p>
+      <p>Weight-loss surgery for obesity may be considered if you have tried other methods to lose weight that haven't worked and: </p>
+      <div class="conditions">
+        <ul>
+          <li>You have extreme obesity(BMI of 40 or higher)</li>
+          <li>Your BMI is 35 to 39.9, and you also have a serious weight-related health problem, such as diabetes or high blood pressure</li>
+          <li>You're committed to making this lifestyle changes that are necessary for surgery to work</li>
+        </ul>
+      </div>
+      <p>Weight-loss surgery helps some people lose as much as 35% or more of their excess body weight. But weight-loss surgery isn't a miracle obesity cure.</p>
+      <p>It doesn't guarantee that you'll lose all of your excess weight or that you'll keep it off long term. Weight-loss success after surgery depends on your commitment to making lifelong changes in your eating and exercise habits.</p>
+      <p>Common weight-loss surgeries include: </p>
+      <div>
+        <ul>
+          <li class="surgeries">Gastric Bypass Surgery</li> In gastric bypass (Roux-en-Y gastric bypass), the surgeon creates a small pouch at the top of your stomach. The small intestine is then cut a short distance below the main stomach and
+          connected to the new pouch. Food and liquid flow directly from the pouch into this part of the intestine, bypassing most of your stomach.
+          <li class="surgeries">Adjustable Gastric Banding</li> In this procedure, your stomach is separated into two pouches with an inflatable band. Pulling the band tight, like a belt, the surgeon creates a tiny channel between the two pouches.
+          The band keeps the opening from expanding and is generally designed to stay in place permanently.
+          <li class="surgeries">Biliopancreatic Diversion With Duodenal Switch</li> This procedure begins with the surgeon removing a large part of the stomach. The surgeon leaves the valve that releases food to the small intestine and the first
+          part of the small intestine (duodenum). Then the surgeon closes off the middle section of the intestine and attaches the last part directly to the duodenum. The separated section of the intestine is reattached to the end of the intestine
+          to allow bile and digestive juices to flow into this part of the intestine.
+          <li class="surgeries">Gastric Sleeve</li> In this procedure, part of the stomach is removed, creating a smaller reservoir for food. It's a less complicated surgery than gastric bypass or biliopancreatic diversion with duodenal switch.
+        </ul>
+      </div>
+
+      <h3>Other Treatments</h3>
+      <p>Vagal nerve blockade is another treatment for obesity. It involves implanting a device under the skin of the abdomen that sends intermittent electrical pulses to the abdominal vagus nerve, which tells the brain when the stomach feels empty
+        or full. This new technology received FDA approval in 2014 for use by adults who have not been able to lose weight with a weight-loss program and who have a BMI of 35 to 45 with at least one obesity-related condition, such as type 2
+        diabetes.</p>
+
+      <h3>Preventing Weight Regain After Obesity Treatment</h3>
+      <p>Unfortunately, it's common to regain weight no matter what obesity treatment methods you try. If you take weight-loss medications, you'll probably regain weight when you stop taking them. You might even regain weight after weight-loss
+        surgery if you continue to overeat or overindulge in high-calorie foods or high-calorie beverages.</p>
+      <p>One of the best ways to prevent regaining the weight you've lost is to get regular physical activity. Aim for 45 to 60 minutes a day.</p>
+      <p>Keep track of your physical activity if it helps you stay motivated and on course. As you lose weight and gain better health, talk to your doctor about what additional activities you might be able to do and, if appropriate, how to give your
+        activity and exercise a boost.</p>
+      <p>You may always have to remain vigilant about your weight. Combining a healthier diet and more activity in a practical and sustainable manner is the best way to keep the weight you lost off for the long term.</p>
+      <p>Take your weight loss and weight maintenance one day at a time and surround yourself with supportive resources to help ensure your success. Find a healthier way of living that you can stick with for the long term.</p>
+
+      <h3>Lifestyle And Home Remedies</h3>
+      <p>Your effort to overcome obesity is more likely to be successful if you follow strategies at home in addition to your formal treatment plan. these can include: </p>
+      <div>
+        <ul>
+          <li class="lifestyle">Learning About Your Condition</li> Education about obesity can help you learn more about why you developed obesity and what you can do about it. You may feel more empowered to take control and stick to your treatment
+          plan. Read reputable self-help books and consider talking about them with your doctor or therapist.
+          <li class="lifestyle">Setting Realistic Goals</li> When you have to lose a significant amount of weight, you may set goals that are unrealistic, such as trying to lose too much too fast. Don't set yourself up for failure. Set daily or
+          weekly goals for exercise and weight loss. Make small changes in your diet instead of attempting drastic changes that you're not likely to stick with for the long haul.
+          <li class="lifestyle">Sticking To Your Treatment Plan</li> Changing a lifestyle you may have lived with for many years can be difficult. Be honest with your doctor, therapist or other health care professionals if you find your activity or
+          eating goals slipping. You can work together to come up with new ideas or new approaches.
+          <li class="lifestyle">Enlisting Support</li> Get your family and friends on board with your weight-loss goals. Surround yourself with people who will support you and help you, not sabotage your efforts. Make sure they understand how
+          important weight loss is to your health. You might also want to join a weight-loss support group.
+          <li class="lifestyle">Keeping A Record</li> Keep a food and activity log. This record can help you remain accountable for your eating and exercise habits. You can discover behavior that may be holding you back and, conversely, what works
+          well for you. You can also use your log to track other important health parameters such as blood pressure and cholesterol levels and overall fitness.
+          <li class="lifestyle">Identifying And Avoiding Food Triggers</li> Distract yourself from your desire to eat with something positive, such as calling a friend. Practice saying no to unhealthy foods and big portions. Eat when you're actually
+          hungry — not simply when the clock says it's time to eat.
+          <li class="lifestyle">Taking Your Medications As Directed</li> If you take weight-loss medications or medications to treat obesity-related conditions, such as high blood pressure or diabetes, take them exactly as prescribed. If you have a
+          problem sticking with your medication regimen or have unpleasant side effects, talk to your doctor.
+        </ul>
+      </div>
+
+      <h3>Alternative Medicine</h3>
+      <p>Numerous dietary supplements that promise to help you shed weight quickly are available. The effectiveness, particularly the long-term effectiveness, and safety of these products are often questionable.</p>
+      <p>Herbal remedies, vitamins and minerals, all considered dietary supplements by the Food and Drug Administration, don't have the same rigorous testing and labeling process as over-the-counter and prescription medications do.</p>
+      <p>Yet some of these substances, including products labeled as "natural," have drug-like effects that can be dangerous. Even some vitamins and minerals can cause problems when taken in excessive amounts. Ingredients may not be standard, and
+        they can cause unpredictable and harmful side effects. Dietary supplements can also cause dangerous interactions with prescription medications you take. Talk to your doctor before taking any dietary supplements.</p>
+      <p>Mind-body therapies — such as acupuncture, mindfulness meditation and yoga — may complement other obesity treatments. However, these therapies generally haven't been well studied in the treatment of weight loss. Talk to your doctor if
+        you're interested in adding a mind-body therapy to your treatment.</p>
+
+      <h3>Coping And Support</h3>
+      <p>Talk to your doctor or therapist about improving your coping skills and consider these tips to cope with obesity and your weight-loss efforts: </p>
+      <div>
+        <ul>
+          <li class="cope">Journal</li> Write in a journal to express pain, anger, fear or other emotions.
+          <li class="cope">Connect</li> Don't become isolated. Try to participate in regular activities and get together with family or friends periodically.
+          <li class="cope">Join</li> Join a support group so that you can connect with others facing similar challenges.
+          <li class="cope">Focus</li> Stay focused on your goals. Overcoming obesity is an ongoing process. Stay motivated by keeping your goals in mind. Remind yourself that you're responsible for managing your condition and working toward your
+          goals.
+          <li class="cope">Relax</li> Learn relaxation and stress management. Learning to recognize stress and developing stress management and relaxation skills can help you gain control of unhealthy eating habits.
+        </ul>
+      </div>
+
+      <h3>What You Can Do</h3>
+      <p>Being an active participant in your care is important. One way to do this is by preparing for your appointment. Think about your needs and goals for treatment. Also, write down a list of questions to ask. These questions may include: </p>
+      <div>
+        <ul>
+          <li>What eating or activity habits are likely contributing to my health concerns and weight gain?</li>
+          <li>What can I do about the challenges I face in managing my weight?</li>
+          <li>Do I have other health problems that are caused by obesity?</li>
+          <li>Should I see a dietitian?</li>
+          <li>Should I see a behavioral counselor with expertise in weight management?</li>
+          <li>What are the treatment options for obesity and my other health problems?</li>
+          <li>Is weight-loss intervention an option for me?</li>
+        </ul>
+      </div>
+      <p>Be sure to let your doctor know about any medical conditions you have and about any prescription or over-the-counter medications, vitamins or supplements that you take.</p>
+
+      <h3>What To Expect From Your Doctor</h3>
+      <p>During your appointment, your doctor is likely to ask you a number of questions about your weight, eating, activity, mood and thoughts, and any symptoms you might have. You may be asked such questions as: </p>
+      <div>
+        <ul>
+          <li>How much did you weigh in high school?</li>
+          <li>What life events may have been associated with weight gain?</li>
+          <li>What and how much do you eat in a typical day?</li>
+          <li>How much activity do you get in a typical day?</li>
+          <li>During what periods of your life did you gain weight?</li>
+          <li>What are the factors that you believe affect your weight?</li>
+          <li>How is your daily life affected by your weight?</li>
+          <li>What diets or treatments have you tried to lose weight?</li>
+          <li>What are your weight-loss goals?</li>
+          <li>Are you ready to make changes in your lifestyle to lose weight?</li>
+          <li>What do you think might prevent you from losing weight?</li>
+        </ul>
+      </div>
+
+      <h3>What You Can Do In The Meantime</h3>
+      <p>If you have time before your scheduled appointment, you can help prepare for the appointment by keeping a diet diary for two weeks prior to the appointment and by recording how many steps you take in a day by using a step counter
+        (pedometer).</p>
+      <p>You can also begin to make choices that will help you start to lose weight, including: </p>
+      <div>
+        <ul>
+          <li class="ability">Making Healthy Changes In Your Diet</li> Include more fruits, vegetables and whole grains in your diet. Begin to reduce portion sizes.
+          <li class="ability">Increasing Your Activity Level</li> Try to get up and move around your home more frequently. Start gradually if you aren't in good shape or aren't used to exercising. Even a 10-minute daily walk can help. If you have
+          any health conditions or are over a certain age — over 40 for men and over 50 for women — wait until you've talked to your doctor before you start a new exercise program.
+        </ul>
+      </div>
+
+      <br />
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer">
+      <h2>© Azraa & Faatimah</h2>
+    </div>
+    <!-- Diagnosis and Treatment -->
+  </div>
+
+  <!-- Diet Chart Plan -->
+  <div data-role="page" data-dialog="true" id="diet" data-theme="b">
+
+  <div data-role="header">
+    <h1>Diet Chart Plan </h1>
+  </div>
+
+  <div data-role="main" class="ui-content" data-theme="b">
+    <img src="image/healthy_eating_plate.png" width=100% height=100%>
+  </div>
+
+  <a href="#index" class="ui-btn ui-icon-back ui-btn-icon-left" data-rel="back">Dismiss</a>
+
+</div>
+
+</body>
+
+</html>
