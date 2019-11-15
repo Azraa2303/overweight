@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.power {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -46px;
+  width: 92px;
+  height: 92px;
+  margin-top: -46px;
+  cursor: pointer;
+  background: url('../image/powerup.png') top center no-repeat;
+}
+
+.power:hover { background: url('../image/powerdown.png') top center no-repeat; }
+
+.powerdown {
+  background: url('../image/powerdown.png') top center no-repeat;
+  display: hidden;
+}
+
+#viewport {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  width: 276px;
+  height: 240px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -138px;
+}
+
+#card {
+  -webkit-transform-style: preserve-3D;
+  -moz-transform-style: preserve-3D;
+  transform-style: preserve-3D;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+#card > div {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+#front {
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  transform: translateZ(1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,.35);
+}
+
+#back {
+  -webkit-transform: translateZ(-1px) rotateY(180deg);
+  -moz-transform: translateZ(-1px) rotateY(180deg);
+  transform: translateZ(-1px) rotateY(180deg);
+}
+
+#front, #back{
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.flip {
+  -webkit-animation: animate 400ms forwards ease-in-out;
+  -moz-animation: animate 400ms forwards ease-in-out;
+  animation: animate 400ms forwards ease-in-out;
+}
+ @-webkit-keyframes
+animate {  to {
+-webkit-transform: rotateY(-180deg);
+}
+
+from { -webkit-transform: rotateY(0deg); }
+}
+ @-moz-keyframes
+animate {  to {
+-moz-transform: rotateY(-180deg);
+}
+
+from { -moz-transform: rotateY(0deg); }
+}
+ @keyframes
+animate {  to {
+transform: rotateY(-180deg);
+}
+
+from { transform: rotateY(0deg); }
+}
+
+.flipback {
+  -webkit-animation: animateback 400ms forwards ease-in-out;
+  -moz-animation: animateback 400ms forwards ease-in-out;
+  animation: animateback 400ms forwards ease-in-out;
+}
+ @-webkit-keyframes
+animateback {  to {
+-webkit-transform: rotateY(0deg);
+}
+
+from { -webkit-transform: rotateY(-180deg); }
+}
+ @-moz-keyframes
+animateback {  to {
+-moz-transform: rotateY(0deg);
+}
+
+from { -moz-transform: rotateY(-180deg); }
+}
+ @keyframes
+animateback {  to {
+transform: rotateY(0deg);
+}
+
+from { transform: rotateY(-180deg); }
+}

@@ -6,120 +6,147 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-
   <!-- css-->
   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="css/index.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/home.css" type="text/css" />
   <link rel="stylesheet" type="text/css" href="css/info.css" type="text/css" />
-
+  <link rel="stylesheet" href="css/on.css">
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
   <!-- javascript -->
   <script src="jquery/jquery.js"></script>
   <script src="jquery/jquery.mobile-1.4.5.js"></script>
-  <script type="text/javascript"></script>
+  <script src="jquery/wheelzoom.js"></script>
+  <script src="jquery/on.js"></script>
+  <script src="jquery/on.min.js"></script>
+  <script src="leaflet/leaflet.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
   <script src="cordova.js"></script>
 
   <title>Obesity and Weightloss App</title>
 </head>
 
 <body>
-  <!-- Index -->
+  <!-- On Button -->
   <div data-role="page" id="index" data-theme="b">
-    <!-- Page header -->
-    <div data-role="header">
-      <h1>OVERWEIGHT AND OBESITY MOBILE APP</h1>
-    </div>
-
-    <div data-role="main" class="ui-content">
-      <br />
-      <br />
-      <br />
-      <div class="ui-grid-a">
-        <!-- 1st row -->
-        <!-- Profile -->
-        <div class="ui-block-a">
-          <div class="ui-bar ui-bar-a">
-            <div class="menu-elem"> <a href="#profile">
-                <div class="menu-img"> <img src="image/profile.png"> </div>
-                <div class="menu-text"> Profile </div>
-              </a> </div>
-          </div>
-        </div>
-
-        <!-- BMI -->
-        <div class="ui-block-b">
-          <div class="ui-bar ui-bar-a">
-            <div class="menu-elem"> <a href="#bmi">
-                <div class="menu-img"> <img src="image/bmi.png"> </div>
-                <div class="menu-text"> BMI </div>
-              </a> </div>
-          </div>
-        </div>
-
-        <!-- 2nd row -->
-        <!-- workout plan -->
-        <div class="ui-block-a">
-          <div class="ui-bar ui-bar-a">
-            <div class="menu-elem"> <a href="#workout">
-                <div class="menu-img"> <img src="image/workout.png"> </div>
-                <div class="menu-text"> Workout Plan </div>
-              </a> </div>
-          </div>
-        </div>
-
-        <!-- Geolocation -->
-        <div class="ui-block-b">
-          <div class="ui-bar ui-bar-a">
-            <div class="menu-elem"> <a href="#geo">
-                <div class="menu-img"> <img src="image/map.png"> </div>
-                <div class="menu-text"> Geolocation </div>
-              </a> </div>
-          </div>
-        </div>
-
-        <!-- 3rd row -->
-        <!-- Diet Chart Plan -->
-        <div class="ui-block-a">
-          <div class="ui-bar ui-bar-a">
-            <div class="menu-elem"> <a href="#diet">
-                <div class="menu-img"> <img src="image/diet.png"> </div>
-                <div class="menu-text"> Diet Chart Plan </div>
-              </a> </div>
-          </div>
-        </div>
-
-        <!-- Info -->
-        <div class="ui-block-b ui-responsive">
-          <div class="ui-bar ui-bar-a">
-            <div class="menu-elem"> <a href="#causes" class="ui-link">
-                <div class="menu-img"> <img src="image/info.png"> </div>
-                <div class="menu-text"> Info </div>
-              </a> </div>
-          </div>
-        </div>
-
-        <!-- ui-grid -->
+  <div id="viewport">
+    <div id="card">
+      <div id="front">
+        <div class="power"></div>
+        <div class="powerdown"></div>
       </div>
-      <!-- main -->
+      <div id="back">
+      </div>
     </div>
+  </div>
+</div>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-    <!-- Footer -->
-    <div data-role="footer" id="footer">
-      <h2>© Azraa & Faatimah</h2>
-    </div>
-
-    <!-- body -->
+<!-- Index -->
+<div data-role="page" id="home" class="home" data-theme="b">
+  <!-- Page header -->
+  <div data-role="header">
+    <h1>OVERWEIGHT AND OBESITY MOBILE APP</h1>
   </div>
 
+  <div data-role="main" class="ui-content">
+    <br />
+    <br />
+    <br />
+    <div class="ui-grid-a">
+      <!-- 1st row -->
+      <!-- Profile -->
+      <div class="ui-block-a">
+        <div class="ui-bar ui-bar-a">
+          <div class="menu-elem"> <a href="#profile">
+              <div class="menu-img"> <img src="image/profile.png"> </div>
+              <div class="menu-text"> Profile </div>
+            </a> </div>
+        </div>
+      </div>
+
+      <!-- BMI -->
+      <div class="ui-block-b">
+        <div class="ui-bar ui-bar-a">
+          <div class="menu-elem"> <a href="#bmi">
+              <div class="menu-img"> <img src="image/bmi.png"> </div>
+              <div class="menu-text"> BMI </div>
+            </a> </div>
+        </div>
+      </div>
+
+      <!-- 2nd row -->
+      <!-- workout plan -->
+      <div class="ui-block-a">
+        <div class="ui-bar ui-bar-a">
+          <div class="menu-elem"> <a href="#workout">
+              <div class="menu-img"> <img src="image/workout.png"> </div>
+              <div class="menu-text"> Workout Plan </div>
+            </a> </div>
+        </div>
+      </div>
+
+      <!-- Geolocation -->
+      <div class="ui-block-b">
+        <div class="ui-bar ui-bar-a">
+          <div class="menu-elem"> <a href="#map">
+              <div class="menu-img"> <img src="image/map.png"> </div>
+              <div class="menu-text"> Geolocation </div>
+            </a> </div>
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+      <!-- Diet Chart Plan -->
+      <div class="ui-block-a">
+        <div class="ui-bar ui-bar-a">
+          <div class="menu-elem"> <a href="#diet">
+              <div class="menu-img"> <img src="image/diet.png"> </div>
+              <div class="menu-text"> Diet Chart Plan </div>
+            </a> </div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="ui-block-b ui-responsive">
+        <div class="ui-bar ui-bar-a">
+          <div class="menu-elem"> <a href="#causes" class="ui-link">
+              <div class="menu-img"> <img src="image/info.png"> </div>
+              <div class="menu-text"> Info </div>
+            </a> </div>
+        </div>
+      </div>
+
+      <!-- ui-grid -->
+    </div>
+    <!-- main -->
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <!-- Footer -->
+  <div data-role="footer" id="footer">
+    <h2>© Azraa & Faatimah</h2>
+  </div>
+  <!-- body -->
+</div>
 
   <!--Symptoms & Causes-->
   <div data-role="page" id="causes" data-theme="b">
@@ -533,17 +560,53 @@
   <!-- Diet Chart Plan -->
   <div data-role="page" data-dialog="true" id="diet" data-theme="b">
 
-  <div data-role="header">
-    <h1>Diet Chart Plan </h1>
+    <div data-role="header">
+      <h1>Diet Chart Plan </h1>
+    </div>
+
+    <div data-role="main" class="ui-content" data-theme="b">
+      <img id="wheelzoom" src="image/healthy_eating_plate.png" width=450px height=480px" alt="Healthy Eating Pyramid Plate">
+      <script>
+        wheelzoom(document.querySelector('#wheelzoom'));
+      </script>
+    </div>
   </div>
 
-  <div data-role="main" class="ui-content" data-theme="b">
-    <img src="image/healthy_eating_plate.png" width=100% height=100%>
+  <!--Geolocation-->
+  <div data-role="page" id="map" data-theme="b">
+    <div style="width:800px; height:500px" id="map"></div>
+    <script type='text/javascript'>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+        });
+
+        var map = L.map('map')
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox.streets',
+          accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYyc' + 'XBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+        }).addTo(map);
+
+        map.locate({
+          setView: true,
+          maxZoom: 16
+        });
+
+        function onLocationFound(e) {
+          var radius = e.accuracy / 2;
+          L.marker(e.latlng).addTo(map)
+            .bindPopup("You are within " + radius + " meters from this point").openPopup();
+          L.circle(e.latlng, radius).addTo(map);
+        }
+        map.on('locationfound', onLocationFound);
+      } else {
+        alert("Geolocation API is not supported in your browser. :(");
+      }
+    </script>
   </div>
-
-  <a href="#index" class="ui-btn ui-icon-back ui-btn-icon-left" data-rel="back">Dismiss</a>
-
-</div>
 
 </body>
 
